@@ -2,55 +2,118 @@
 <html>
 <head>
     <title>Sahil Verma</title>
+
     <style>
         body {
-            font-family: Arial;
-            max-width: 800px;
-            margin: auto;
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            color: #333;
             line-height: 1.6;
         }
-        h1 { color: #2c3e50; }
-        a { color: #2980b9; text-decoration: none; }
-        nav a { margin-right: 15px; }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .left {
+            width: 220px;
+        }
+
+        .left img {
+            width: 180px;
+            border-radius: 5px;
+        }
+
+        .right {
+            margin-left: 40px;
+            max-width: 750px;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        .menu a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 8px 12px;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
     </style>
 </head>
 
 <body>
 
-<h1>Sahil Verma</h1>
-<p>PhD (Economics), IIT Kharagpur</p>
+<div class="container">
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <!-- LEFT -->
+    <div class="left">
+        <img src="profile.jpg" alt="Sahil Verma">
 
-<hr>
+        <p><strong>Email:</strong><br> your-email@example.com</p>
 
-<h2 id="about">About</h2>
-<p>
-I am an economist working on economic inequality, causal inference,
-and development economics. My research focuses on applying modern econometric
-methods such as Difference-in-Differences and Double Machine Learning.
-</p>
+        <a class="button" href="cv.pdf" target="_blank">Download CV</a>
 
-<h2 id="research">Research</h2>
-<ul>
-    <li>Working Paper: Treatment Effects using DoubleML</li>
-    <li>Research Interest: Inequality, Development, Applied Econometrics</li>
-</ul>
+        <p>
+            <a href="#">Google Scholar</a><br>
+            <a href="#">LinkedIn</a>
+        </p>
+    </div>
 
-<h2 id="teaching">Teaching</h2>
-<ul>
-    <li>Econometrics</li>
-    <li>Development Economics</li>
-    <li>Public Economics</li>
-</ul>
+    <!-- RIGHT -->
+    <div class="right">
 
-<h2 id="contact">Contact</h2>
-<p>Email: your-email@example.com</p>
+        <h1>Sahil Verma</h1>
+        <p>PhD (Economics), IIT Kharagpur</p>
+
+        <div class="menu">
+            <a href="#research">Research</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <hr>
+
+        <p>
+        I am an economist working on economic inequality, causal inference,
+        and development economics. My research focuses on applied econometrics,
+        including Difference-in-Differences and Double Machine Learning.
+        </p>
+
+        <h3 id="research">Research</h3>
+        <ul>
+            <li>Working Paper: Treatment Effects using DoubleML</li>
+            <li>Research Interests: Inequality, Development, Econometrics</li>
+        </ul>
+
+        <h3 id="teaching">Teaching</h3>
+        <ul>
+            <li>Econometrics</li>
+            <li>Development Economics</li>
+            <li>Public Economics</li>
+        </ul>
+
+        <h3 id="contact">Contact</h3>
+        <p>Email: your-email@example.com</p>
+
+    </div>
+
+</div>
 
 </body>
 </html>

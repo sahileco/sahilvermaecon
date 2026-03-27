@@ -5,48 +5,83 @@
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 50px;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            margin: 40px auto;
+            max-width: 1000px;
             color: #222;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
-        .header {
+        /* Top menu */
+        .menu {
+            text-align: right;
             margin-bottom: 20px;
         }
 
         .menu a {
-            margin-right: 20px;
+            margin-left: 20px;
             text-decoration: none;
             color: #444;
+            font-size: 15px;
         }
 
+        /* Layout */
         .container {
             display: flex;
             align-items: flex-start;
-            margin-top: 20px;
         }
 
-        .photo {
-            width: 180px;
+        /* Left column */
+        .left {
+            width: 220px;
         }
 
-        .photo img {
-            width: 180px;
-            border-radius: 5px;
+        .left img {
+            width: 200px;
+            border-radius: 6px;
         }
 
-        .content {
-            margin-left: 40px;
-            max-width: 750px;
+        .left p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .left a {
+            text-decoration: none;
+            color: #2c3e50;
+        }
+
+        /* Right column */
+        .right {
+            margin-left: 50px;
+            max-width: 700px;
         }
 
         h1 {
             margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-weight: 500;
+        }
+
+        .cv-button {
+            display: inline-block;
+            padding: 6px 10px;
+            background: #2c3e50;
+            color: white;
+            font-size: 13px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 10px;
         }
 
         hr {
             margin: 25px 0;
+            border: none;
+            border-top: 1px solid #ddd;
         }
     </style>
 </head>
@@ -63,39 +98,60 @@
 
 <hr>
 
-<!-- MAIN SECTION -->
 <div class="container">
 
-    <!-- LEFT: PHOTO -->
-    <div class="photo">
+    <!-- LEFT SIDE -->
+    <div class="left">
         <img src="profile.jpg" alt="Sahil Verma">
-    </div>
-
-    <!-- RIGHT: TEXT -->
-    <div class="content">
-
-        <h1>Sahil Verma</h1>
-        <p>PhD (Economics), IIT Kharagpur</p>
 
         <p>
-        I am an economist working on economic inequality, causal inference, 
-        and development economics. My research focuses on applied econometrics, 
+            <strong>Sahil Verma</strong><br>
+            PhD (Economics)<br>
+            IIT Kharagpur
+        </p>
+
+        <p>
+            <a href="mailto:your-email@example.com">Email</a><br>
+            <a href="#">Google Scholar</a><br>
+            <a href="#">LinkedIn</a>
+        </p>
+
+        <a class="cv-button" href="cv.pdf" target="_blank">Download CV</a>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+
+        <h1>Sahil Verma</h1>
+
+        <p>
+        I am an economist working on economic inequality, causal inference,
+        and development economics. My research focuses on applied econometrics,
         including Difference-in-Differences and Double Machine Learning.
         </p>
 
-        <h3 id="research">Research</h3>
+        <h2 id="research">Research</h2>
         <p>
         My research interests include inequality, development economics, 
         and causal inference methods.
         </p>
 
-        <h3 id="teaching">Teaching</h3>
-        <p>
-        Econometrics, Development Economics, Public Economics
-        </p>
+        <ul>
+            <li><strong>Working Paper:</strong> Treatment Effects using DoubleML</li>
+            <li><strong>Ongoing Work:</strong> ICT and Welfare Analysis</li>
+        </ul>
 
-        <h3 id="contact">Contact</h3>
-        <p>Email: your-email@example.com</p>
+        <h2 id="teaching">Teaching</h2>
+        <ul>
+            <li>Econometrics</li>
+            <li>Development Economics</li>
+            <li>Public Economics</li>
+        </ul>
+
+        <h2 id="contact">Contact</h2>
+        <p>
+        Email: your-email@example.com
+        </p>
 
     </div>
 

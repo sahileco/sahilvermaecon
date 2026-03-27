@@ -6,26 +6,37 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
-            color: #333;
+            margin: 50px;
+            color: #222;
             line-height: 1.6;
+        }
+
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .menu a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #444;
         }
 
         .container {
             display: flex;
             align-items: flex-start;
+            margin-top: 20px;
         }
 
-        .left {
-            width: 220px;
+        .photo {
+            width: 180px;
         }
 
-        .left img {
+        .photo img {
             width: 180px;
             border-radius: 5px;
         }
 
-        .right {
+        .content {
             margin-left: 40px;
             max-width: 750px;
         }
@@ -34,79 +45,54 @@
             margin-bottom: 5px;
         }
 
-        .menu a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #2c3e50;
-            font-weight: bold;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 8px 12px;
-            background: #2c3e50;
-            color: white;
-            text-decoration: none;
-            margin-top: 10px;
-            border-radius: 4px;
-        }
-
         hr {
-            margin: 20px 0;
+            margin: 25px 0;
         }
     </style>
 </head>
 
 <body>
 
+<!-- MENU -->
+<div class="menu">
+    <a href="#">Home</a>
+    <a href="#research">Research</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<hr>
+
+<!-- MAIN SECTION -->
 <div class="container">
 
-    <!-- LEFT -->
-    <div class="left">
+    <!-- LEFT: PHOTO -->
+    <div class="photo">
         <img src="profile.jpg" alt="Sahil Verma">
-
-        <p><strong>Email:</strong><br> your-email@example.com</p>
-
-        <a class="button" href="cv.pdf" target="_blank">Download CV</a>
-
-        <p>
-            <a href="#">Google Scholar</a><br>
-            <a href="#">LinkedIn</a>
-        </p>
     </div>
 
-    <!-- RIGHT -->
-    <div class="right">
+    <!-- RIGHT: TEXT -->
+    <div class="content">
 
         <h1>Sahil Verma</h1>
         <p>PhD (Economics), IIT Kharagpur</p>
 
-        <div class="menu">
-            <a href="#research">Research</a>
-            <a href="#teaching">Teaching</a>
-            <a href="#contact">Contact</a>
-        </div>
-
-        <hr>
-
         <p>
-        I am an economist working on economic inequality, causal inference,
-        and development economics. My research focuses on applied econometrics,
+        I am an economist working on economic inequality, causal inference, 
+        and development economics. My research focuses on applied econometrics, 
         including Difference-in-Differences and Double Machine Learning.
         </p>
 
         <h3 id="research">Research</h3>
-        <ul>
-            <li>Working Paper: Treatment Effects using DoubleML</li>
-            <li>Research Interests: Inequality, Development, Econometrics</li>
-        </ul>
+        <p>
+        My research interests include inequality, development economics, 
+        and causal inference methods.
+        </p>
 
         <h3 id="teaching">Teaching</h3>
-        <ul>
-            <li>Econometrics</li>
-            <li>Development Economics</li>
-            <li>Public Economics</li>
-        </ul>
+        <p>
+        Econometrics, Development Economics, Public Economics
+        </p>
 
         <h3 id="contact">Contact</h3>
         <p>Email: your-email@example.com</p>
